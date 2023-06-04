@@ -1,0 +1,6 @@
+gradio 
+controlnet_aux  
+diffusers 
+transformers
+accelerate==0.17.0
+xformers
