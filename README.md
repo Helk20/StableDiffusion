@@ -26,29 +26,11 @@ We highly recommend installing🤗the following dependencies and scripts to succ
 
  This line downloads the train_dreambooth.py script from a GitHub repository. The -q flag is used to suppress the output of the wget command.
 
-!wget -q :
-    
-```bash
-!wget -q https://github.com/ShivamShrirao/diffusers/raw/main/examples/dreambooth/train_dreambooth.py
-```
- This line downloads the convert_diffusers_to_original_stable_diffusion.py script from another GitHub :
- ```bash
-!wget -q https://github.com/ShivamShrirao/diffusers/raw/main/scripts/convert_diffusers_to_original_stable_diffusion.py
-```
- This line installs the diffusers package from the specified GitHub repository using pip. The -qq flag is used to suppress the output of the pip command:
-  ```bash
-  %pip install -qq git+https://github.com/ShivamShrirao/diffusers
 
-```
- This line installs the triton package using pip. The -q flag is used to suppress the output of the pip command. The -U flag is used to upgrade the package to the latest version, and --pre is used to install pre-release versions if available:
  ```bash
-%pip install -q -U --pre triton
+%pip install gradio  
 ```
-This line installs multiple packages (accelerate, transformers, ftfy, bitsandbytes, gradio, natsort, safetensors, xformers) using pip. The -q flag is used to suppress the output of the pip command.
- ```bash
-%pip install -q accelerate transformers ftfy bitsandbytes==0.35.0 gradio natsort safetensors xformers
-```
-This command installs the controlnet_aux package. It is likely a package that provides auxiliary functionality or utilities for working with control nets in deep learning models.
+
  ```bash
 pip install controlnet_aux
 ```
@@ -56,19 +38,12 @@ This command installs three packages: diffusers, transformers, and accelerate.
 diffusers: is a package that provides implementations of diffusion models, which are probabilistic generative models.
 transformers: is a popular package for natural language processing (NLP) tasks, providing pre-trained models, tokenizers, and other utilities.
 accelerate: is a library that provides tools for accelerating PyTorch training and inference, such as distributed training and mixed precision.
- ```bash
-pip install diffusers transformers accelerate
-```
-This command installs the xformers package. It is likely a package that provides additional functionalities or enhancements for working with transformers in deep learning models.
+
  ```bash
 pip install xformers
 ```
 This command installs the torch and torchvision packages. torch is the main PyTorch library for deep learning, providing tensor computations and neural network operations. torchvision is a package that provides utilities for computer vision tasks, such as image transformations and pre-trained models.
- ```bash
-pip install torch torchvision
-```
-This command installs the diffusers package, which was already mentioned above. It provides implementations of diffusion models for generative modeling tasks.
- ```bash
+  ```bash
 pip install diffusers
 ```
  This command installs the transformers package, which was already explained above. It is a popular package for NLP tasks, offering pre-trained models and other NLP utilities.
@@ -77,7 +52,7 @@ pip install transformers
 ```
 This command installs the accelerate package using the ! syntax, which is used specifically in Jupyter Notebook or IPython to run shell commands. It is likely installing the same accelerate package mentioned earlier.
  ```bash
-!pip install accelerate
+!pip install accelerate==0.17.0
 ```
 # Credentials    
 We are extremely grateful for the guidance and support provided by the AI Experts monitors, organizers, and all the staff of Math&Maroc and 1337AI club throughout the hackathon. Your supervision and dedication were instrumental in ensuring the smooth running of the event, and your expertise and insights were invaluable in helping our team overcome the challenges we encountered.
